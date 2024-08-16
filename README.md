@@ -1,5 +1,3 @@
-Certainly! Below is the updated description that includes the compilation process for Linux.
-
 ### Overview
 
 This code defines two main classes: `Base64` and `RSA_Sample`. The `Base64` class provides methods for encoding and decoding data in Base64 format, while the `RSA_Sample` class handles RSA key generation, encryption, and decryption of messages.
