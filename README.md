@@ -11,7 +11,7 @@ This code defines two main classes: `Base64` and `RSA_Sample`. The `Base64` clas
 ### RSA_Sample Class
 
 - **Methods**:
-  - `generateRSAKeys`: Generates a pair of RSA keys (public and private) with a key size of 2048 bits. The public key is extracted from the private key and stored in memory.
+  - `generateRSAKeys`: Generates a pair of RSA keys (public and private) with a key size of 4096 bits. The public key is extracted from the private key and stored in memory.
   - `encryptMessage`: Encrypts a given plaintext message using the public key and returns the encrypted message encoded in Base64 format.
   - `decryptMessage`: Takes a Base64 encoded encrypted message, decodes it, and decrypts it using the private key, returning the original plaintext message.
 
@@ -24,6 +24,7 @@ In the `main` function:
 3. The message is encrypted using the public key, and the encrypted message is displayed in Base64 format.
 4. The encrypted message is decrypted using the private key, and the decrypted message is displayed.
 5. Finally, the allocated RSA keys are freed to prevent memory leaks.
+6. tl;dr Keep in mind that base64 encoding make key bigger than it's actuall size is. Decode it before usage (if you are encoding it)
 
 ### Compilation Process for Linux
 
